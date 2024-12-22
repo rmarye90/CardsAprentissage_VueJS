@@ -94,4 +94,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Votre Nom - [@votrelinkedin](https://www.linkedin.com/in/maryline-renaud/)
 
-Lien du projet: [https://github.com/votreusername/vue-learning-path](https://github.com/votreusername/vue-learning-path)
+Lien du projet: [https://github.com/votreusername/vue-learning-path](https://github.com/rmarye90 /vue-learning-path)
+
+Version Canva: soon
