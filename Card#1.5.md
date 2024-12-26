@@ -36,7 +36,7 @@ const user = reactive({
 - reactive() perd sa réactivité si déstructuré
 - Les propriétés ajoutées après création ne sont pas réactives
 
-[Pied de page avec numéro de carte]
+                    [pied de page] Vue.js Fondamentaux | Carte 1A
 
 # CARTE 1B - VERSO : EXEMPLE & TIPS
 [148 x 210 mm]
@@ -80,8 +80,16 @@ function updateUser() {
 - N'oubliez jamais .value dans les scripts
 - Évitez la déstructuration des objets reactifs
 
-# CARTE 1C - QCM
-[148 x 210 mm]
+### 🟢 BONNES PRATIQUES
+
+- Nommez vos refs de manière descriptive
+- Groupez les états liés dans reactive()
+- Évitez la mutation directe des props
+- Préférez les computed pour les valeurs dérivées
+
+                    [pied de page] Vue.js Fondamentaux | Carte 1B
+
+# QCM
 
 ## TESTEZ VOS CONNAISSANCES 
 
@@ -114,6 +122,39 @@ function updateUser() {
    - B) Directement sans .value ✅
    - C) Avec une fonction
    - D) Ce n'est pas possible
+
+6. Peut-on utiliser reactive() avec une valeur primitive ? 
+    - A) Oui 
+    - B) Non ✅
+    - C) Seulement avec TypeScript 
+    - D) Seulement pour les nombres
+
+7. Comment créer une valeur réactive dérivée ?
+    - A) ref() 
+    - B) reactive() 
+    - C) computed() ✅
+    - D) watch()
+
+8. Les refs sont-elles mutables ?
+    - A) Oui ✅
+    - B) Non 
+    - C) Seulement en développement 
+    - D) Seulement dans le setup
+
+9. Comment observer les changements d'une ref ?
+    - A) computed() 
+    - B) watch() ✅
+    - C) effect()
+    - D) observer()
+
+10. Quelle est la meilleure pratique pour les valeurs primitives ?
+    - A) Utiliser ref() ✅
+    - B) Utiliser reactive() 
+    - C) Utiliser des variables normales 
+    - D) Utiliser computed()
+
+                        [pied de page] Vue.js Fondamentaux | Carte 1C
+
 
 ### EXERCICE PRATIQUE
 Créez un compteur avec :
