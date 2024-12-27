@@ -157,10 +157,17 @@ function updateUser() {
 
 
 ### EXERCICE PRATIQUE
-Créez un compteur avec :
-- Une valeur numérique
-- Un bouton d'incrémentation
-- Un bouton de réinitialisation
-- Un objet pour stocker l'historique des valeurs
 
-[Pied de page avec correction au verso]
+Créez un compteur avec :
+- Créer un compteur avec ref
+- Créer un historique avec reactive
+- Implémenter un bouton incrément/décrément
+- Un bouton de réinitialisation
+- Sauvegarder chaque changement
+
+## RÉPONSES QCM
+
+| 1. B | 2. C | 3. B | 4. B | 5. B |
+| 1. B | 2. C | 3. A | 4. B | 5. A |
+
+                        [pied de page] Vue.js Fondamentaux | Carte 1C
