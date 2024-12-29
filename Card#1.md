@@ -110,7 +110,7 @@ const increment = () => {
 | 6. C | 7. B | 8. B | 9. B | 10. B |
 
 ## 💡 TIPS & BONNES PRATIQUES
-Organisation des imports
+**Organisation des imports**
 
 ```ts
 // D'abord les imports de Vue
