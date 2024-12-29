@@ -1,56 +1,41 @@
-# 🎴 Carte #1 : La Réactivité dans Vue.js
+# Composants Vue.js [1/40]
 
-## 📚 Explication détaillée
-La réactivité est le cœur de Vue.js. C'est ce qui permet à votre interface utilisateur de se mettre à jour automatiquement quand vos données changent. Dans Vue 3, la réactivité est construite autour de deux concepts principaux :
+## 📝 Description
+Un composant Vue.js est un bloc de code réutilisable qui encapsule du HTML, du CSS et du JavaScript. C'est l'équivalent d'une brique de Lego qui peut être réutilisée à travers votre application. 
 
-1. `ref()` : Pour les valeurs primitives (string, number, boolean)
-- Crée un objet réactif avec une propriété `.value`
-- Nécessaire car JavaScript ne peut pas détecter les changements sur les valeurs primitives directement
-
-2. `reactive()` : Pour les objets et tableaux
-- Crée une version réactive profonde de l'objet
-- Suit tous les changements dans l'objet, même les objets imbriqués
+### Structure d'un composant :
+- **Template**: La partie HTML du composant
+- **Script**: La logique en JavaScript/TypeScript
+- **Style**: Le style CSS/Tailwind
+- **State**: Les données propres au composant
+- **Methods**: Les fonctions du composant
 
 ## 💡 Recommandations Vue.js
-- Utiliser `ref()` pour les valeurs simples
-- Utiliser `reactive()` pour les objets complexes
-- Éviter de déstructurer les objets réactifs car cela brise la réactivité
-- Toujours accéder à `.value` pour les refs dans le script, mais pas nécessaire dans le template
+- Utiliser la syntaxe Single File Component (.vue)
+- Nommer les composants en PascalCase (UserProfile)
+- Un composant = une responsabilité
+- Privilégier `<script setup>` avec TypeScript
 
-## 🔍 Exemple concret
+## 📌 Exemple
+
 ```vue
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
 
-// Utilisation de ref pour les valeurs simples
-const count = ref<number>(0)
-const message = ref<string>('Bonjour')
+const count = ref(0)
 
-// Utilisation de reactive pour les objets
-const user = reactive({
-  name: 'John',
-  age: 25,
-  preferences: {
-    theme: 'dark',
-    notifications: true
-  }
-})
-
-// Fonction pour modifier les valeurs
-const incrementCount = () => {
-  count.value++ // Noter l'utilisation de .value
-  user.age++ // Pas besoin de .value pour reactive
+const increment = () => {
+  count.value++
 }
 </script>
 
 <template>
-  <div class="p-4">
-    <h1 class="text-2xl mb-4">{{ message }}</h1>
+  <div class="flex flex-col items-center p-4">
+    <h2 class="text-xl mb-4">Mon Compteur</h2>
     <p class="mb-2">Compteur: {{ count }}</p>
-    <p class="mb-2">Utilisateur: {{ user.name }}, {{ user.age }} ans</p>
     <button 
-      @click="incrementCount"
-      class="bg-blue-500 text-white px-4 py-2 rounded"
+      @click="increment"
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
     >
       Incrémenter
     </button>
@@ -59,44 +44,265 @@ const incrementCount = () => {
 ```
 
 ## ❓ QCM
-1. Quelle fonction utilise-t-on pour rendre réactive une valeur primitive dans Vue 3?
-   - A) reactive()
-   - B) ref()
-   - C) computed()
-   - D) watch()
-   - Réponse: B
 
-2. Pourquoi doit-on utiliser .value avec ref()?
-   - A) C'est une préférence de style
-   - B) Pour des raisons de performance
-   - C) Pour permettre à Vue de détecter les changements sur les valeurs primitives
-   - D) Ce n'est pas obligatoire
-   - Réponse: C
+1. Un composant Vue.js est :
+   - [ ] Un fichier HTML uniquement
+   - [x] Un bloc de code réutilisable combinant HTML, CSS et JavaScript
+   - [ ] Un fichier JavaScript uniquement
+   - [ ] Une feuille de style CSS
 
-3. Dans le template, faut-il utiliser .value pour accéder à une ref?
-   - A) Oui, toujours
-   - B) Non, jamais
-   - C) Seulement pour les nombres
-   - D) Seulement dans les événements
-   - Réponse: B
+2. L'extension de fichier pour un composant Vue est :
+   - [ ] .js
+   - [x] .vue
+   - [ ] .html
+   - [ ] .ts
 
-4. Que se passe-t-il si on déstructure un objet reactive?
-   - A) Rien de spécial
-   - B) Une erreur est lancée
-   - C) La réactivité est perdue
-   - D) Les valeurs sont dupliquées
-   - Réponse: C
+3. Pour déclarer une variable réactive dans Vue 3 :
+   - [ ] const count = 0
+   - [ ] let count = 0
+   - [x] const count = ref(0)
+   - [ ] var count = 0
 
-5. Quelle est la différence principale entre ref et reactive?
-   - A) ref est plus rapide
-   - B) reactive ne fonctionne qu'avec les tableaux
-   - C) ref est pour les valeurs primitives, reactive pour les objets
-   - D) Il n'y a pas de différence
-   - Réponse: C
+4. La convention de nommage pour les composants Vue est :
+   - [ ] camelCase
+   - [ ] snake_case
+   - [x] PascalCase
+   - [ ] kebab-case
 
-## 💻 Exercice pratique
-Créez une petite application de gestion de tâches qui démontre la réactivité :
-- Une liste de tâches (array of objects)
-- Un compteur de tâches terminées
-- La possibilité d'ajouter/supprimer/marquer comme terminée une tâche
-- Un filtre pour afficher toutes les tâches/terminées/en cours
+5. Pour accéder à la valeur d'une ref dans le script :
+   - [ ] count
+   - [x] count.value
+   - [ ] count()
+   - [ ] this.count
+
+6. La balise pour définir le template est :
+   - [ ] `<html>`
+   - [ ] `<div>`
+   - [x] `<template>`
+   - [ ] `<body>`
+
+7. Le script d'un composant moderne Vue 3 se définit avec :
+   - [ ] `<script>`
+   - [x] `<script setup>`
+   - [ ] `<javascript>`
+   - [ ] `<code>`
+
+8. Pour afficher une variable dans le template :
+   - [ ] {count}
+   - [x] {{count}}
+   - [ ] $(count)
+   - [ ] [count]
+
+9. SFC signifie :
+   - [ ] Simple File Component
+   - [x] Single File Component
+   - [ ] Special File Configuration
+   - [ ] System File Control
+
+10. Un événement click dans Vue s'écrit :
+    - [ ] onclick=""
+    - [x] @click=""
+    - [ ] v-click=""
+    - [ ] on-click=""
+
+## ✏️ Reponses QCM
+| 1. B | 2. B  | 3. C | 4. C | 5. B |
+| 6. C | 7. B | 8. B | 9. B | 10. B |
+
+## 💡 TIPS & BONNES PRATIQUES
+Organisation des imports
+
+```ts
+// D'abord les imports de Vue
+import { ref, computed } from 'vue'
+
+// Puis les composants
+import MyComponent from './components/MyComponent.vue'
+
+// Enfin les autres imports (utils, types, etc.)
+import type { User } from '@/types'
+```
+
+**Nommage des fichiers**
+
+-Components: UserProfile.vue
+-Composables: useCounter.ts
+-Types: types.ts
+-Constantes: constants.ts
+
+**Réactivité**
+
+```ts
+# ❌ Éviter
+let count = 0
+
+# ✅ Préférer
+const count = ref(0)
+```
+
+**Typage des Props**
+
+```ts
+# ❌ Éviter
+const props = defineProps(['title'])
+
+# ✅ Préférer
+const props = defineProps<{
+  title: string
+  count?: number
+}>()
+```
+**Structure de dossiers recommandée**
+
+```ts
+src/
+├── components/
+│   ├── common/          # Composants réutilisables
+│   └── features/        # Composants spécifiques
+├── composables/         # Logique réutilisable
+├── types/              # Types TypeScript
+└── utils/              # Fonctions utilitaires
+```
+
+**Conventions de nommage des événements**
+
+```ts
+# ❌ Éviter
+emit('change')
+
+# ✅ Préférer
+emit('update:modelValue')
+emit('user-selected')
+```
+
+**Gestion des refs**
+
+```ts
+# ❌ Éviter de mélanger ref et reactive
+const state = reactive({
+  count: ref(0)  // Non nécessaire
+})
+
+# ✅ Préférer
+const count = ref(0)
+# OU
+const state = reactive({
+  count: 0
+})
+```
+
+**Performance**
+
+Évitez v-for avec v-if sur le même élément
+Utilisez key avec v-for
+Préférez computed à des méthodes pour les données dérivées
+
+**Debug**
+
+```ts
+# Utilisez console.log avec des objets nommés
+console.log({ count: count.value, props })
+
+# Pour la réactivité
+import { watch } from 'vue'
+watch(count, (newVal, oldVal) => {
+  console.log('Count changed:', { newVal, oldVal })
+})
+```
+
+**VSCode Snippets utiles**
+
+```json
+jsonCopy{
+  "Vue Component Setup": {
+    "prefix": "vbase-ts",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "    $1",
+      "  </div>",
+      "</template>"
+    ]
+  }
+}
+```
+
+## ✏️ Exercice Pratique
+
+Créez un compteur avec les fonctionnalités suivantes :
+- Affichage du compteur
+- Bouton d'incrémentation
+- Bouton de décrémentation
+- Minimum de 0
+- Change de couleur au-dessus de 5
+
+Structure de base :
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+
+// À vous de jouer !
+
+</script>
+
+<template>
+  <div>
+    <!-- Votre code ici -->
+  </div>
+</template>
+```
+
+## 🔍 Solution
+<details>
+<summary>Voir la solution</summary>
+
+```vue
+<script setup lang="ts">
+import { ref, computed } from 'vue'
+
+const count = ref(0)
+
+const increment = () => {
+  count.value++
+}
+
+const decrement = () => {
+  if (count.value > 0) {
+    count.value--
+  }
+}
+
+const counterColor = computed(() => {
+  return count.value > 5 ? 'text-red-500' : 'text-blue-500'
+})
+</script>
+
+<template>
+  <div class="flex flex-col items-center p-4">
+    <h2 class="text-xl mb-4">Compteur</h2>
+    <p class="mb-2 text-2xl" :class="counterColor">
+      {{ count }}
+    </p>
+    <div class="flex gap-2">
+      <button 
+        @click="decrement"
+        class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+      >
+        -
+      </button>
+      <button 
+        @click="increment"
+        class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+      >
+        +
+      </button>
+    </div>
+  </div>
+</template>
+```
+</details>

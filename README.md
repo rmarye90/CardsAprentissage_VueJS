@@ -11,28 +11,81 @@ Ce projet est conçu pour accompagner les développeurs juniors dans leur appren
 
 ## 📚 Structure du Projet
 
-Le projet est organisé en cartes d'apprentissage couvrant les concepts fondamentaux :
+Le projet est organisé en cartes d'apprentissage couvrant les concepts fondamentaux et avancés :
 
-1. **Fondamentaux**
-   - Template Syntax
-   - Reactivity
-   - Components
-   - Props & Events
-   - Lifecycle Hooks
+1. **FONDAMENTAUX**
 
-2. **Concepts Avancés**
-   - Computed Properties
-   - Watchers
-   - Component Communication
-   - State Management
-   - Routing
+Composants Vue.js (SFC)
+Réactivité (ref, reactive)
+Template Syntax
+Props & Emits
+Data Binding
+Computed Properties
+
+2. **DIRECTIVES & EVENTS**
+
+Directives de base (v-if, v-show, v-for)
+Event Handling
+v-model et Forms
+Modifiers (événements et v-model)
+
+3. **COMPOSITION & COMMUNICATION**
+
+Component Lifecycle
+Provide/Inject
+Slots
+Composables
+Teleport
+
+4. **ÉTAT & PERFORMANCE**
+
+State Management
+Watchers
+Suspense
+Keep-Alive
+Async Components
+
+5. **TRANSITIONS & ANIMATIONS**
+
+Transition Component
+TransitionGroup
+Animation Techniques
+
+6. **ROUTING & ORGANISATION**
+
+Vue Router
+Nested Routes
+Route Guards
+Lazy Loading
+
+7. **TYPESCRIPT & TESTS**
+
+TypeScript Integration
+Type Safety in Components
+Unit Testing
+E2E Testing
+
+8. **OPTIMISATION & DÉPLOIEMENT**
+
+Performance Optimization
+Server-Side Rendering
+Static Site Generation
+Deployment Strategies
+
+9. **PATTERNS AVANCÉS**
+
+Mixins & Plugins
+Custom Directives
+Render Functions
+Web Components
+Error Handling
 
 Chaque carte comprend :
-- Une explication détaillée
-- Les recommandations officielles de Vue.js
-- Des exemples concrets
-- Un QCM de validation
-- Des exercices pratiques
+ - Une explication détaillée
+ - Les recommandations officielles de Vue.js
+ - Des exemples concrets
+ - Un QCM de validation
+ - Un exercice pratique
 
 ## 🛠️ Configuration Technique
 
