@@ -118,6 +118,12 @@ const increment = () => {
     - [ ] Doit être appelé comme une fonction
     - [ ] Est identique à une méthode
 
+<details>
+<summary>## ✏️ Reponses QCM</summary>
+| 1. B | 2. B  | 3. C | 4. C | 5. B |
+| 6. C | 7. B | 8. B | 9. B | 10. B |
+</details>
+
 ## ✏️ Exercice Pratique
 
 Créez un gestionnaire de tâches simple avec :
