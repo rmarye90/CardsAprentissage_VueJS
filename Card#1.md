@@ -125,10 +125,10 @@ import type { User } from '@/types'
 
 **Nommage des fichiers**
 
--Components: UserProfile.vue
--Composables: useCounter.ts
--Types: types.ts
--Constantes: constants.ts
+- Components: UserProfile.vue
+- Composables: useCounter.ts
+- Types: types.ts
+- Constantes: constants.ts
 
 **Réactivité**
 
