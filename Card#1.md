@@ -47,61 +47,61 @@ const increment = () => {
 
 1. Un composant Vue.js est :
    - [ ] Un fichier HTML uniquement
-   - [x] Un bloc de code réutilisable combinant HTML, CSS et JavaScript
+   - [ ] Un bloc de code réutilisable combinant HTML, CSS et JavaScript
    - [ ] Un fichier JavaScript uniquement
    - [ ] Une feuille de style CSS
 
 2. L'extension de fichier pour un composant Vue est :
    - [ ] .js
-   - [x] .vue
+   - [ ] .vue
    - [ ] .html
    - [ ] .ts
 
 3. Pour déclarer une variable réactive dans Vue 3 :
    - [ ] const count = 0
    - [ ] let count = 0
-   - [x] const count = ref(0)
+   - [ ] const count = ref(0)
    - [ ] var count = 0
 
 4. La convention de nommage pour les composants Vue est :
    - [ ] camelCase
    - [ ] snake_case
-   - [x] PascalCase
+   - [ ] PascalCase
    - [ ] kebab-case
 
 5. Pour accéder à la valeur d'une ref dans le script :
    - [ ] count
-   - [x] count.value
+   - [ ] count.value
    - [ ] count()
    - [ ] this.count
 
 6. La balise pour définir le template est :
    - [ ] `<html>`
    - [ ] `<div>`
-   - [x] `<template>`
+   - [ ] `<template>`
    - [ ] `<body>`
 
 7. Le script d'un composant moderne Vue 3 se définit avec :
    - [ ] `<script>`
-   - [x] `<script setup>`
+   - [ ] `<script setup>`
    - [ ] `<javascript>`
    - [ ] `<code>`
 
 8. Pour afficher une variable dans le template :
    - [ ] {count}
-   - [x] {{count}}
+   - [ ] {{count}}
    - [ ] $(count)
    - [ ] [count]
 
 9. SFC signifie :
    - [ ] Simple File Component
-   - [x] Single File Component
+   - [ ] Single File Component
    - [ ] Special File Configuration
    - [ ] System File Control
 
 10. Un événement click dans Vue s'écrit :
     - [ ] onclick=""
-    - [x] @click=""
+    - [ ] @click=""
     - [ ] v-click=""
     - [ ] on-click=""
 
@@ -213,7 +213,7 @@ watch(count, (newVal, oldVal) => {
 **VSCode Snippets utiles**
 
 ```json
-jsonCopy{
+{
   "Vue Component Setup": {
     "prefix": "vbase-ts",
     "body": [
