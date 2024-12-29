@@ -105,8 +105,9 @@ const increment = () => {
     - [ ] v-click=""
     - [ ] on-click=""
 
+<h2>Reponses QCM</h2>
 <details>
-<summary><h2>Reponses QCM</h2></summary>
+<summary>voire la solution</summary>
 | 1. B | 2. B  | 3. C | 4. C | 5. B |
 | 6. C | 7. B | 8. B | 9. B | 10. B |
 </details>

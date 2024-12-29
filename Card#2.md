@@ -9,7 +9,7 @@ La réactivité dans Vue.js permet de créer des données qui, lorsqu'elles sont
 ## 💡 Recommandations Vue.js
 - Utiliser `ref()` par défaut pour plus de clarté
 - Éviter de mélanger `ref` et `reactive`
-- Ne pas destructurer les objets `reactive`
+- Attention à la destructuration qui casse la `reactive`
 - Utiliser `computed()` pour les valeurs dérivées
 - Préférer la Composition API avec `<script setup>`
 
@@ -20,7 +20,7 @@ La réactivité dans Vue.js permet de créer des données qui, lorsqu'elles sont
 import { ref, reactive, computed } from 'vue'
 
 // Utilisation de ref
-const count = ref<number>(0)
+const count = ref(0)
 const message = ref<string>('Hello')
 
 // Utilisation de reactive

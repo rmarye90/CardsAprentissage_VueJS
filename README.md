@@ -1,6 +1,6 @@
 # Vue.js Learning Path - De Junior à Intermédiaire
 
-Ce projet est conçu pour accompagner les développeurs juniors dans leur apprentissage de Vue.js 3, avec pour objectif d'atteindre un niveau intermédiaire en 3 mois.
+Ce projet est conçu pour accompagner les développeurs juniors dans leur apprentissage de Vue.js 3, avec pour objectif d'atteindre un niveau intermédiaire/avancé.
 
 ## 🎯 Objectifs
 
@@ -149,4 +149,4 @@ Votre Nom - [@votrelinkedin](https://www.linkedin.com/in/maryline-renaud/)
 
 Lien du projet: [https://github.com/rmarye90/vue-learning-path]
 
-Version Canva: soon
+Version Canva (à imprimer): soon
