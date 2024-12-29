@@ -1,112 +1,142 @@
-# Réactivité dans Vue.js
+# Réactivité dans Vue.js [2/40]
 
-## Description
-La réactivité est le cœur de Vue.js. Elle permet de synchroniser automatiquement l'état (data) avec l'interface utilisateur (UI).
+## 📝 Description
+La réactivité dans Vue.js permet de créer des données qui, lorsqu'elles sont modifiées, mettent automatiquement à jour l'interface utilisateur. Vue 3 offre deux APIs principales pour la réactivité:
 
-### Deux façons principales de créer de la réactivité :
+- **ref()**: Pour les valeurs primitives (string, number, boolean)
+- **reactive()**: Pour les objets et tableaux
 
-1. `ref()`
-   - Pour les valeurs primitives (string, number, boolean)
-   - Nécessite l'utilisation de `.value` dans le script
-   - Automatiquement "unwrapped" dans les templates
+## 💡 Recommandations Vue.js
+- Utiliser `ref()` par défaut pour plus de clarté
+- Éviter de mélanger `ref` et `reactive`
+- Ne pas destructurer les objets `reactive`
+- Utiliser `computed()` pour les valeurs dérivées
+- Préférer la Composition API avec `<script setup>`
 
-2. `reactive()`
-   - Pour les objets et tableaux
-   - Accès direct aux propriétés
-   - Pas de `.value` nécessaire
-
-## Recommandations officielles
-
-- Préférer `ref()` pour la majorité des cas
-- Utiliser `reactive()` uniquement pour des objets complexes
-- Ne pas mélanger `ref` et `reactive`
-- Toujours déstructurer les refs dans le setup avec `.value`
-
-## Exemple de code
+## 📌 Exemple
 
 ```vue
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue'
 
-// Utilisation de ref pour les valeurs primitives
+// Utilisation de ref
 const count = ref<number>(0)
-const name = ref<string>('John')
+const message = ref<string>('Hello')
 
-// Utilisation de reactive pour les objets
+// Utilisation de reactive
 const user = reactive({
-  firstName: 'John',
-  lastName: 'Doe',
+  name: 'John',
   age: 25
 })
 
-// Computed property basée sur des valeurs réactives
-const fullName = computed(() => {
-  return user.firstName + ' ' + user.lastName
-})
+// Valeur calculée
+const doubleCount = computed(() => count.value * 2)
 
-// Méthodes manipulant les valeurs réactives
-const incrementCount = () => {
-  count.value++ // Notez l'utilisation de .value pour ref
-}
-
-const updateUser = () => {
-  user.age++ // Pas besoin de .value pour reactive
+// Modification des valeurs
+const increment = () => {
+  count.value++
+  user.age++
 }
 </script>
 
 <template>
   <div class="p-4">
-    <div class="mb-4">
-      <p>Count: {{ count }}</p>
-      <button 
-        @click="incrementCount"
-        class="bg-blue-500 text-white px-4 py-2 rounded"
-      >
-        Increment
-      </button>
-    </div>
-
-    <div class="mb-4">
-      <p>Full Name: {{ fullName }}</p>
-      <p>Age: {{ user.age }}</p>
-      <button 
-        @click="updateUser"
-        class="bg-green-500 text-white px-4 py-2 rounded"
-      >
-        Age +1
-      </button>
-    </div>
+    <p>Count: {{ count }}</p>
+    <p>Double: {{ doubleCount }}</p>
+    <p>Message: {{ message }}</p>
+    <p>User: {{ user.name }} ({{ user.age }})</p>
+    
+    <button 
+      @click="increment"
+      class="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+    >
+      Increment
+    </button>
   </div>
 </template>
 ```
 
-## QCM
+## ❓ QCM
 
-1. Quelle fonction utilise-t-on pour rendre réactive une valeur primitive ?
+1. Quelle API utiliser pour une valeur primitive ?
    - [ ] reactive()
    - [x] ref()
    - [ ] computed()
    - [ ] watch()
 
-2. Comment accède-t-on à la valeur d'une ref dans le script ?
-   - [ ] count()
+2. Comment accéder à la valeur d'une ref dans le script ?
+   - [ ] count
    - [x] count.value
-   - [ ] getValue(count)
+   - [ ] count()
    - [ ] count.get()
 
-[Les autres questions du QCM...]
+3. Les objets reactive peuvent-ils être destructurés ?
+   - [ ] Oui, sans perte de réactivité
+   - [x] Non, cela perd la réactivité
+   - [ ] Seulement avec toRefs()
+   - [ ] Uniquement pour les propriétés de premier niveau
 
-## Exercice pratique
+4. Un computed est :
+   - [ ] Mutable
+   - [x] Une valeur en lecture seule basée sur d'autres données réactives
+   - [ ] Une fonction normale
+   - [ ] Un watcher
 
-Créez un composant "UserProfile" qui :
-- Gère un objet user avec name, email et age
-- Affiche ces informations
-- Permet de les modifier via des inputs
-- Calcule si l'utilisateur est majeur (computed)
-- Change le style en fonction de l'âge
+5. Quelle est la bonne façon de modifier une ref ?
+   - [ ] count++
+   - [x] count.value++
+   - [ ] count.set(count.value + 1)
+   - [ ] count(count() + 1)
+
+6. Comment créer une ref typée en TypeScript ?
+   - [x] const count = ref<number>(0)
+   - [ ] const count: number = ref(0)
+   - [ ] const count = ref(0 as number)
+   - [ ] const count = new Ref<number>(0)
+
+7. Quelle méthode utiliser pour convertir un objet reactive en refs ?
+   - [ ] toRef()
+   - [x] toRefs()
+   - [ ] toReactive()
+   - [ ] toValue()
+
+8. Dans le template, pour une ref :
+   - [ ] Il faut utiliser .value
+   - [x] La valeur est automatiquement "unwrapped"
+   - [ ] Il faut utiliser une méthode get()
+   - [ ] Il faut utiliser une computed
+
+9. reactive() peut être utilisé avec :
+   - [ ] string
+   - [ ] number
+   - [x] object
+   - [ ] boolean
+
+10. Un computed :
+    - [ ] Peut être modifié directement
+    - [x] Se met à jour automatiquement quand ses dépendances changent
+    - [ ] Doit être appelé comme une fonction
+    - [ ] Est identique à une méthode
+
+## ✏️ Exercice Pratique
+
+Créez un gestionnaire de tâches simple avec :
+- Une liste de tâches (reactive)
+- Un compteur de tâches totales et complétées (computed)
+- La possibilité d'ajouter/supprimer/compléter des tâches
+
+Structure de base :
 
 ```vue
 <script setup lang="ts">
+import { ref, reactive, computed } from 'vue'
+
+interface Task {
+  id: number
+  title: string
+  completed: boolean
+}
+
 // À vous de jouer !
 </script>
 
@@ -117,10 +147,10 @@ Créez un composant "UserProfile" qui :
 </template>
 ```
 
-## Solution
+## 🔍 Solution
 
 <details>
-<summary>Cliquez pour voir la solution</summary>
+<summary>Voir la solution</summary>
 
 ```vue
 <script setup lang="ts">
@@ -216,8 +246,8 @@ const toggleTask = (task: Task) => {
 
 ## 💡 Tips & Bonnes Pratiques
 
-- Utilisez toujours ref() pour les primitives
-- N'oubliez jamais .value lors de la modification d'une ref dans le script
-- Préférez computed aux méthodes pour les valeurs dérivées
+- Utilisez toujours `ref()` pour les primitives
+- N'oubliez jamais `.value` lors de la modification d'une ref dans le script
+- Préférez `computed` aux méthodes pour les valeurs dérivées
 - Évitez de modifier directement les propriétés d'un objet reactive
 - Utilisez TypeScript pour une meilleure sécurité de type
