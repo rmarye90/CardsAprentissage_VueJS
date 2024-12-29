@@ -118,8 +118,9 @@ const increment = () => {
     - [ ] Doit être appelé comme une fonction
     - [ ] Est identique à une méthode
 
+<h2>Reponses QCM</h2>
 <details>
-<summary><h2>Reponses QCM</h2></summary>
+<summary>voire la solution</summary>
 | 1. B | 2. B  | 3. B | 4. B | 5. B |
 | 6. A | 7. B | 8. B | 9. C | 10. B |
 </details>
