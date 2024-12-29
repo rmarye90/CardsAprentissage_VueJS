@@ -60,68 +60,68 @@ const increment = () => {
 
 1. Quelle API utiliser pour une valeur primitive ?
    - [ ] reactive()
-   - [x] ref()
+   - [ ] ref()
    - [ ] computed()
    - [ ] watch()
 
 2. Comment accéder à la valeur d'une ref dans le script ?
    - [ ] count
-   - [x] count.value
+   - [ ] count.value
    - [ ] count()
    - [ ] count.get()
 
 3. Les objets reactive peuvent-ils être destructurés ?
    - [ ] Oui, sans perte de réactivité
-   - [x] Non, cela perd la réactivité
+   - [ ] Non, cela perd la réactivité
    - [ ] Seulement avec toRefs()
    - [ ] Uniquement pour les propriétés de premier niveau
 
 4. Un computed est :
    - [ ] Mutable
-   - [x] Une valeur en lecture seule basée sur d'autres données réactives
+   - [ ] Une valeur en lecture seule basée sur d'autres données réactives
    - [ ] Une fonction normale
    - [ ] Un watcher
 
 5. Quelle est la bonne façon de modifier une ref ?
    - [ ] count++
-   - [x] count.value++
+   - [ ] count.value++
    - [ ] count.set(count.value + 1)
    - [ ] count(count() + 1)
 
 6. Comment créer une ref typée en TypeScript ?
-   - [x] const count = ref<number>(0)
+   - [ ] const count = ref<number>(0)
    - [ ] const count: number = ref(0)
    - [ ] const count = ref(0 as number)
    - [ ] const count = new Ref<number>(0)
 
 7. Quelle méthode utiliser pour convertir un objet reactive en refs ?
    - [ ] toRef()
-   - [x] toRefs()
+   - [ ] toRefs()
    - [ ] toReactive()
    - [ ] toValue()
 
 8. Dans le template, pour une ref :
    - [ ] Il faut utiliser .value
-   - [x] La valeur est automatiquement "unwrapped"
+   - [ ] La valeur est automatiquement "unwrapped"
    - [ ] Il faut utiliser une méthode get()
    - [ ] Il faut utiliser une computed
 
 9. reactive() peut être utilisé avec :
    - [ ] string
    - [ ] number
-   - [x] object
+   - [ ] object
    - [ ] boolean
 
 10. Un computed :
     - [ ] Peut être modifié directement
-    - [x] Se met à jour automatiquement quand ses dépendances changent
+    - [ ] Se met à jour automatiquement quand ses dépendances changent
     - [ ] Doit être appelé comme une fonction
     - [ ] Est identique à une méthode
 
 <details>
-<summary>## ✏️ Reponses QCM</summary>
-| 1. B | 2. B  | 3. C | 4. C | 5. B |
-| 6. C | 7. B | 8. B | 9. B | 10. B |
+<summary><h2>Reponses QCM</h2></summary>
+| 1. B | 2. B  | 3. B | 4. B | 5. B |
+| 6. A | 7. B | 8. B | 9. C | 10. B |
 </details>
 
 ## ✏️ Exercice Pratique
