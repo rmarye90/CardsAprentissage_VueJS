@@ -17,7 +17,7 @@ Comprendre la communication entre composants parents et enfants à travers les p
 
 ## 📌 Exemple
 
-```vue
+```ts
 <!-- ChildComponent.vue -->
 <script setup lang="ts">
 // Définition des props avec TypeScript
