@@ -196,6 +196,9 @@ interface CommentFormProps {
 
 ## 🔍 Solution
 
+<details>
+<summary>Voir la solution</summary>
+
 ```vue
 <!-- CommentForm.vue -->
 <script setup lang="ts">
@@ -304,6 +307,7 @@ const handleSubmit = () => {
   </form>
 </template>
 ```
+</details>
 
 ## 💡 Tips pour les Props & Emits
 
