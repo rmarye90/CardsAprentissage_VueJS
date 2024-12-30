@@ -15,75 +15,76 @@ Le projet est organisé en cartes d'apprentissage couvrant les concepts fondamen
 
 1. **FONDAMENTAUX**
 
-Composants Vue.js (SFC)
-Réactivité (ref, reactive)
-Template Syntax
-Props & Emits
-Data Binding
-Computed Properties
+- Composants Vue.js (SFC)
+- Réactivité (ref, reactive)
+- Template Syntax
+- Props & Emits
+- Data Binding
+- Computed Properties
 
 2. **DIRECTIVES & EVENTS**
 
-Directives de base (v-if, v-show, v-for)
-Event Handling
-v-model et Forms
-Modifiers (événements et v-model)
+- Directives de base (v-if, v-show, v-for)
+- Event Handling
+- v-model et Forms
+- Modifiers (événements et v-model)
 
 3. **COMPOSITION & COMMUNICATION**
 
-Component Lifecycle
-Provide/Inject
-Slots
-Composables
-Teleport
+- Component Lifecycle
+- Provide/Inject
+- Slots
+- Composables
+- Teleport
 
 4. **ÉTAT & PERFORMANCE**
 
-State Management
-Watchers
-Suspense
-Keep-Alive
-Async Components
+- State Management
+- Watchers
+- Suspense
+- Keep-Alive
+- Async Components
 
 5. **TRANSITIONS & ANIMATIONS**
 
-Transition Component
-TransitionGroup
-Animation Techniques
+- Transition Component
+- TransitionGroup
+- Animation Techniques
 
 6. **ROUTING & ORGANISATION**
 
-Vue Router
-Nested Routes
-Route Guards
-Lazy Loading
+- Vue Router
+- Nested Routes
+- Route Guards
+- Lazy Loading
 
 7. **TYPESCRIPT & TESTS**
 
-TypeScript Integration
-Type Safety in Components
-Unit Testing
-E2E Testing
+- TypeScript Integration
+- Type Safety in Components
+- Unit Testing
+- 2E Testing
 
 8. **OPTIMISATION & DÉPLOIEMENT**
 
-Performance Optimization
-Server-Side Rendering
-Static Site Generation
-Deployment Strategies
+- Performance Optimization
+- Server-Side Rendering
+- Static Site Generation
+- Deployment Strategies
 
 9. **PATTERNS AVANCÉS**
 
-Mixins & Plugins
-Custom Directives
-Render Functions
-Web Components
-Error Handling
+- Mixins & Plugins
+- Custom Directives
+- Render Functions
+- Web Components
+- Error Handling
 
 Chaque carte comprend :
  - Une explication détaillée
  - Les recommandations officielles de Vue.js
  - Des exemples concrets
+ - Des Tips
  - Un QCM de validation
  - Un exercice pratique
 
