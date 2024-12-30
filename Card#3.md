@@ -134,6 +134,13 @@ const styles = computed(() => ({
     - [ ] :css="{ color: activeColor }"
     - [ ] v-style="{ color: activeColor }"
 
+<h2>Reponses QCM</h2>
+<details>
+<summary>voire la solution</summary>
+| 1. B | 2. A  | 3. A | 4. B | 5. A |
+| 6. B | 7. A | 8. A | 9. B | 10. A |
+</details>
+
 ## ✏️ Exercice Pratique
 
 Créez un composant de carte utilisateur qui :
