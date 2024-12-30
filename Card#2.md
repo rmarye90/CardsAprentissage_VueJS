@@ -4,7 +4,7 @@
 La réactivité dans Vue.js permet de créer des données qui, lorsqu'elles sont modifiées, mettent automatiquement à jour l'interface utilisateur. Vue 3 offre deux APIs principales pour la réactivité:
 
 - **ref()**: Pour les valeurs primitives (string, number, boolean)
-- **reactive()**: Pour les objets et tableaux
+- **reactive()**: Contrairement à une ref qui enveloppe la valeur interne dans un objet spécial, reactive() rend un objet lui-même réactif
 
 ## 💡 Recommandations Vue.js
 - Utiliser `ref()` par défaut pour plus de clarté

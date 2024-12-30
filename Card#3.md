@@ -76,60 +76,60 @@ const styles = computed(() => ({
 
 1. Quelle syntaxe utilise-t-on pour l'interpolation de texte ?
    - [ ] {value}
-   - [x] {{ value }}
+   - [ ] {{ value }}
    - [ ] ${value}
    - [ ] {{{ value }}}
 
 2. Comment fait-on un binding d'attribut (v-bind) en version courte ?
-   - [x] :attribute="value"
+   - [ ] :attribute="value"
    - [ ] @attribute="value"
    - [ ] #attribute="value"
    - [ ] &attribute="value"
 
 3. Quelle expression est valide dans un template ?
-   - [x] {{ user.name.toUpperCase() }}
+   - [ ] {{ user.name.toUpperCase() }}
    - [ ] {{ if (user.name) { return 'Hi' } }}
    - [ ] {{ user.save() }}
    - [ ] {{ const name = user.name }}
 
 4. Comment écouter un événement click ?
    - [ ] :click="handler"
-   - [x] @click="handler"
+   - [ ] @click="handler"
    - [ ] v-click="handler"
    - [ ] on-click="handler"
 
 5. Pour une condition dans le template :
-   - [x] v-if="condition"
+   - [ ] v-if="condition"
    - [ ] ?if="condition"
    - [ ] if="condition"
    - [ ] #if="condition"
 
 6. Le two-way binding se fait avec :
    - [ ] v-bind
-   - [x] v-model
+   - [ ] v-model
    - [ ] v-on
    - [ ] v-sync
 
 7. Pour un binding de classe dynamique :
-   - [x] :class="{ active: isActive }"
+   - [ ] :class="{ active: isActive }"
    - [ ] class="{{ active: isActive }}"
    - [ ] :class="if (isActive) 'active'"
    - [ ] class="isActive ? 'active' : ''"
 
 8. Les directives commencent toujours par :
-   - [x] v-
+   - [ ] v-
    - [ ] @
    - [ ] :
    - [ ] #
 
 9. Dans une interpolation, on peut :
    - [ ] Déclarer des variables
-   - [x] Utiliser des opérateurs ternaires
+   - [ ] Utiliser des opérateurs ternaires
    - [ ] Écrire des boucles for
    - [ ] Définir des fonctions
 
 10. Pour faire un binding de style :
-    - [x] :style="{ color: activeColor }"
+    - [ ] :style="{ color: activeColor }"
     - [ ] style="{{ color: activeColor }}"
     - [ ] :css="{ color: activeColor }"
     - [ ] v-style="{ color: activeColor }"
