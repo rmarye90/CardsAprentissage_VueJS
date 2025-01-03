@@ -374,7 +374,7 @@ const toggleTask = (taskId: number) => {
 ```
 
 ### 2. Éviter v-if avec v-for
-```vue
+```ts
 <!-- ❌ À éviter -->
 <div v-for="item in items" v-if="item.isVisible">
 
@@ -393,7 +393,7 @@ const toggleTask = (taskId: number) => {
 ```
 
 ### 4. Key avec v-for
-```vue
+```ts
 <!-- ❌ À éviter -->
 <div v-for="item in items" :key="index">
 
