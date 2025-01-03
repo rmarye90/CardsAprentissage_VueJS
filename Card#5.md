@@ -180,6 +180,7 @@ Créez un composant de formulaire de réservation avec :
 
 <details>
 <summary>Voir la solution</summary>
+
 ```vue
 <script setup lang="ts">
 import { ref, computed } from 'vue'
