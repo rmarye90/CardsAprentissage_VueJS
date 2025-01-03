@@ -1,5 +1,8 @@
 # Template Syntax dans Vue.js [3/40]
 
+## 🎯 Objectif
+Comprendre la syntaxe de template Vue.js, qui permet de lier dynamiquement des données au DOM et de créer des interfaces réactives.
+
 ## 📝 Description
 La syntaxe de template Vue.js est une extension de HTML qui permet d'exprimer dynamiquement la relation entre le DOM et les données de l'instance Vue. Elle comprend :
 

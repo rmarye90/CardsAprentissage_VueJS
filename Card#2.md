@@ -1,5 +1,8 @@
 # Réactivité dans Vue.js [2/40]
 
+## 🎯 Objectif
+Comprendre le système de réactivité de Vue 3, ses différents APIs et leur utilisation pour gérer l'état dynamique de l'application.
+
 ## 📝 Description
 La réactivité dans Vue.js permet de créer des données qui, lorsqu'elles sont modifiées, mettent automatiquement à jour l'interface utilisateur. Vue 3 offre deux APIs principales pour la réactivité:
 

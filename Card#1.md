@@ -1,5 +1,8 @@
 # Composants Vue.js [1/40]
 
+## 🎯 Objectif
+Comprendre les composants Vue.js, leur structure et leur utilisation comme briques de base d'une application.
+
 ## 📝 Description
 Un composant Vue.js est un bloc de code réutilisable qui encapsule du HTML, du CSS et du JavaScript. C'est l'équivalent d'une brique de Lego qui peut être réutilisée à travers votre application. 
 
