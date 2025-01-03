@@ -365,7 +365,7 @@ const toggleTask = (taskId: number) => {
 ## 💡 Tips pour les Directives de Base
 
 ### 1. Optimisation des performances avec v-show vs v-if
-```vue
+```ts
 <!-- Pour les toggles fréquents -->
 <div v-show="isVisible">Contenu fréquemment togglé</div>
 
