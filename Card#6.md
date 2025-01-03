@@ -114,61 +114,61 @@ const completionStatus = computed({
 
 1. Une computed property se recalcule :
    - [ ] À chaque rendu
-   - [x] Quand ses dépendances changent
+   - [ ] Quand ses dépendances changent
    - [ ] Quand on l'appelle
    - [ ] À intervalle régulier
 
 2. Par rapport à une méthode, une computed property :
-   - [x] Est mise en cache
+   - [ ] Est mise en cache
    - [ ] Est plus rapide à exécuter
    - [ ] Peut prendre des paramètres
    - [ ] Est asynchrone
 
 3. Une computed property peut :
-   - [x] Avoir un getter et un setter
+   - [ ] Avoir un getter et un setter
    - [ ] Être async/await
    - [ ] Modifier directement ses dépendances
    - [ ] Retourner undefined
 
 4. La mise en cache d'une computed :
-   - [x] Est basée sur ses dépendances réactives
+   - [ ] Est basée sur ses dépendances réactives
    - [ ] Dure un temps fixe
    - [ ] Est manuelle
    - [ ] N'existe pas
 
 5. Dans une computed, on accède à une ref :
-   - [x] Avec .value
+   - [ ] Avec .value
    - [ ] Directement
    - [ ] Avec $refs
    - [ ] Avec this
 
 6. Une computed property doit :
-   - [x] Retourner une valeur
+   - [ ] Retourner une valeur
    - [ ] Modifier l'état
    - [ ] Appeler des API
    - [ ] Émettre des événements
 
 7. Les computed properties sont utiles pour :
-   - [x] Filtrer des listes
-   - [x] Formatter des données
-   - [x] Calculer des totaux
+   - [ ] Filtrer des listes
+   - [ ] Formatter des données
+   - [ ] Calculer des totaux
    - [ ] Faire des appels API
 
 8. Une computed property avec setter :
-   - [x] Peut être utilisée avec v-model
+   - [ ] Peut être utilisée avec v-model
    - [ ] Est asynchrone
    - [ ] Ne peut pas avoir de getter
    - [ ] Est plus lente
 
 9. Les dépendances d'une computed sont :
-   - [x] Détectées automatiquement
+   - [ ] Détectées automatiquement
    - [ ] Déclarées manuellement
    - [ ] Configurables
    - [ ] Optionnelles
 
 10. Pour des calculs complexes, il est préférable d'utiliser :
     - [ ] Des méthodes
-    - [x] Des computed properties
+    - [ ] Des computed properties
     - [ ] Des watchers
     - [ ] Des refs
 
@@ -192,6 +192,7 @@ Créez un composant de panier d'achat avec :
 
 <details>
 <summary>Voir la solution</summary>
+
 ```vue
 <script setup lang="ts">
 import { ref, computed } from 'vue'
