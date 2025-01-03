@@ -199,7 +199,7 @@ interface CommentFormProps {
 <details>
 <summary>Voir la solution</summary>
 
-```vue
+```ts
 <!-- CommentForm.vue -->
 <script setup lang="ts">
 interface CommentFormProps {
