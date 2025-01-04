@@ -139,26 +139,26 @@ const handleActionWithParams = (action: string, id: number, event: Event) => {
 ## ❓ QCM
 
 1. Quelle est la syntaxe raccourcie pour v-on ?
-   - [x] @
+   - [ ] @
    - [ ] :
    - [ ] #
    - [ ] $
 
 2. Comment empêcher la propagation d'un événement ?
    - [ ] @click.prevent
-   - [x] @click.stop
+   - [ ] @click.stop
    - [ ] @click.cancel
    - [ ] @click.halt
 
 3. Pour empêcher le comportement par défaut :
    - [ ] @click.stop
    - [ ] @click.default
-   - [x] @click.prevent
+   - [ ] @click.prevent
    - [ ] @click.halt
 
 4. Pour n'écouter qu'une seule fois :
    - [ ] @click.single
-   - [x] @click.once
+   - [ ] @click.once
    - [ ] @click.one
    - [ ] @click.first
 
@@ -166,34 +166,34 @@ const handleActionWithParams = (action: string, id: number, event: Event) => {
    - [ ] @key.enter
    - [ ] @keyboard.enter
    - [ ] @press.enter
-   - [x] @keyup.enter
+   - [ ] @keyup.enter
 
 6. Comment passer des arguments à un handler ?
-   - [x] @click="handler(arg, $event)"
+   - [ ] @click="handler(arg, $event)"
    - [ ] @click="handler(arg)"
    - [ ] @click="{arg}"
    - [ ] @click.args="arg"
 
 7. Pour le clic droit :
-   - [x] @click.right
+   - [ ] @click.right
    - [ ] @rightclick
    - [ ] @click.secondary
    - [ ] @click.context
 
 8. Les modificateurs de touches incluent :
-   - [x] .ctrl
-   - [x] .alt
-   - [x] .shift
-   - [x] .meta
+   - [ ] .ctrl
+   - [ ] .alt
+   - [ ] .shift
+   - [ ] .meta
 
 9. Dans un handler d'événement, `this` fait référence à :
    - [ ] le composant
    - [ ] l'élément DOM
-   - [x] undefined (avec setup)
+   - [ ] undefined (avec setup)
    - [ ] l'événement
 
 10. Pour un événement de souris :
-    - [x] MouseEvent
+    - [ ] MouseEvent
     - [ ] Event
     - [ ] DOMEvent
     - [ ] PointerEvent
@@ -217,8 +217,6 @@ Créez un composant de dessin simple qui :
 
 <details>
 <summary>Voir la solution</summary>
-
-Je vais vous fournir la solution pour le composant de dessin.
 
 ```vue
 <script setup lang="ts">
