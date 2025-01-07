@@ -261,11 +261,11 @@ const resetForm = () => {
 1. v-model combine :
    - [ ] :model et @change
    - [ ] :bind et @update
-   - [x] :value et @input
+   - [ ] :value et @input
    - [ ] :data et @sync
 
 2. Pour un champ numérique, on utilise :
-   - [x] v-model.number
+   - [ ] v-model.number
    - [ ] v-model.numeric
    - [ ] v-model.int
    - [ ] v-model.float
@@ -274,16 +274,16 @@ const resetForm = () => {
    - [ ] v-model.clean
    - [ ] v-model.strip
    - [ ] v-model.space
-   - [x] v-model.trim
+   - [ ] v-model.trim
 
 4. Pour une mise à jour différée :
    - [ ] v-model.delayed
-   - [x] v-model.lazy
+   - [ ] v-model.lazy
    - [ ] v-model.async
    - [ ] v-model.defer
 
 5. Pour les checkboxes multiples :
-   - [x] Un tableau dans v-model
+   - [ ] Un tableau dans v-model
    - [ ] Une chaîne dans v-model
    - [ ] Un objet dans v-model
    - [ ] Un nombre dans v-model
@@ -291,29 +291,29 @@ const resetForm = () => {
 6. Pour un select multiple :
    - [ ] v-model retourne une chaîne
    - [ ] v-model retourne un objet
-   - [x] v-model retourne un tableau
+   - [ ] v-model retourne un tableau
    - [ ] v-model retourne un boolean
 
 7. Pour un composant personnalisé :
-   - [x] modelValue comme prop
+   - [ ] modelValue comme prop
    - [ ] value comme prop
    - [ ] model comme prop
    - [ ] input comme prop
 
 8. Les modificateurs disponibles sont :
-   - [x] .lazy
+   - [ ] .lazy
    - [ ] .sync
-   - [x] .number
-   - [x] .trim
+   - [ ] .number
+   - [ ] .trim
 
 9. Pour une validation en temps réel :
    - [ ] Methods
    - [ ] Watch
    - [ ] v-model.validate
-   - [x] Computed properties
+   - [ ] Computed properties
 
 10. Dans un formulaire, prevent default est géré par :
-    - [x] @submit.prevent
+    - [ ] @submit.prevent
     - [ ] v-model.prevent
     - [ ] @form.prevent
     - [ ] v-prevent
