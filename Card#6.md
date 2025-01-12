@@ -190,6 +190,42 @@ Créez un composant de panier d'achat avec :
 - Réduction si le total dépasse 100€
 - Frais de livraison gratuits au-dessus de 50€
 
+```vue
+<script setup lang="ts">
+// Importez les composants nécessaires de Vue
+
+// Créez l'interface Product avec les propriétés :
+// id: number
+// name: string
+// price: number
+// quantity: number
+
+// Créez un state products avec quelques produits
+
+// Créez les computed properties
+
+// Créez une fonction pour mettre à jour la quantité d'un produit
+
+</script>
+
+<template>
+  <div class="max-w-3xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6">Panier d'achat</h2>
+
+    <!-- Créez la liste des produits -->
+    <div class="mb-8">
+      <!-- En-tête du tableau -->
+      
+      <!-- Liste des produits -->
+    </div>
+
+    <!-- Créez le résumé de la commande
+    
+    <!-- Ajoutez les messages d'information -->
+  </div>
+</template>
+```
+
 <details>
 <summary>Voir la solution</summary>
 

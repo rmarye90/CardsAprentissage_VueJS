@@ -4,7 +4,6 @@
 Comprendre les différentes méthodes de liaison de données (data binding) dans Vue.js, permettant de synchroniser les données entre le template et la logique.
 
 ## 📝 Description
-Le data binding dans Vue.js peut être :
 - **One-way binding** (liaison unidirectionnelle) : Des données vers le template
 - **Two-way binding** (liaison bidirectionnelle) : Synchronisation dans les deux sens
 - **Event binding** : Liaison des événements
@@ -175,6 +174,25 @@ Créez un composant de formulaire de réservation avec :
 - Options supplémentaires (checkbox)
 - Validation en temps réel
 - Affichage d'un résumé en temps réel
+
+Structure de base :
+
+```vue
+<script setup lang="ts">
+// importer ce qui est nécessaire
+// et créer l'interface et l'état initial
+
+</script>
+
+<template>
+  <div class="max-w-md mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6">Formulaire de Réservation</h2>
+
+    <!-- Votre code ici -->
+    
+  </div>
+</template>
+```
 
 ## 🔍 Solution
 
