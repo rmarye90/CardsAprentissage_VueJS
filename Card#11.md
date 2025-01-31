@@ -246,12 +246,10 @@ onUnmounted(() => {
 watch(source, callback)
 ```
 
-Je vais ajouter ces sections à la carte précédente, après les TIPS & BONNES PRATIQUES et avant l'exercice pratique.
-
 ## 🎯 Cas d'utilisation courants
 
 ### Gestion des thèmes
-```vue
+```ts
 <!-- ThemeProvider.vue -->
 <script setup lang="ts">
 import { provide, ref, watch } from 'vue'
@@ -323,7 +321,7 @@ provide(themeKey, {
 ```
 
 ### Système d'authentification
-```vue
+```ts
 <!-- AuthProvider.vue -->
 <script setup lang="ts">
 import { provide, ref } from 'vue'
@@ -540,15 +538,6 @@ if (!theme) throw new Error('ThemeProvider not found')
   </div>
 </template>
 ```
-
-Cet exemple complet montre comment implémenter un système de thème complet avec :
-- Persistance des préférences
-- Gestion du thème sombre/clair
-- Personnalisation de la couleur principale
-- Ajustement de la taille de police
-- Mise à jour en temps réel
-- Type-safety avec TypeScript
-
 
 ## ✏️ Exercice Pratique
 
